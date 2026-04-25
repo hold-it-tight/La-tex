@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{article}
+%Classes that support the \chapter command are typically intended for long, well-structured documents. These include the report, book, and memoir classes, the latter offering greater flexibility and advanced customization options. In contrast, classes such as article, beamer (used for presentations), and letter are designed for shorter documents and therefore do not support the \chapter command.
+
+% Package to define page margins
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+% Package to use Arial font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Encoding and language packages (optional, but recommended)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+{\tiny }
+% Title and author (optional)
+\title{Basic Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+This is a basic \LaTeX{} document with the following configurations:
+
+\begin{itemize}
+	\item Paper size: A4.
+	\item Margins: 2 cm on all sides.
+	\item Font: Arial (via the \texttt{helvet} package).
+\end{itemize}
+
+\section{Content}
+Here you may write the content of your document. The font used is Arial (or an approximation, since \LaTeX{} defaults to the Helvetica family when configured with the \texttt{helvet} package).
+
+\subsection{Secondary Section}
+Your text here...
+
+\subsubsection{Tertiary Section}
+Your text here...
+
+
+\end{document}
