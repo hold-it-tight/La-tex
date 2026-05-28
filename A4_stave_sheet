@@ -1,0 +1,102 @@
+\documentclass[twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{atbegshi}
+
+\geometry{
+	a4paper,
+	top=1cm,
+	bottom=1cm,
+	inner=2cm,
+	outer=1cm
+}
+
+\pagestyle{empty}
+
+%%%%%% AUTO DRAW %%%%%%
+\AtBeginShipout{
+	\AtBeginShipoutUpperLeft{
+		
+		\begin{tikzpicture}[remember picture,overlay]
+			
+			%%%%%% MARGINS %%%%%%
+			\ifodd\value{page}
+			\def\LeftMargin{2cm}
+			\def\RightMargin{1cm}
+			\else
+			\def\LeftMargin{1cm}
+			\def\RightMargin{2cm}
+			\fi
+			
+			%%%%%% VISIBLE MARGINS %%%%%%
+			\begin{scope}[gray!50,dash pattern=on 2pt off 3pt,line width=0.8pt]
+				
+				% left
+				\draw
+				([xshift=\LeftMargin]current page.north west)
+				--
+				([xshift=\LeftMargin]current page.south west);
+				
+				% right
+				\draw
+				([xshift=-\RightMargin]current page.north east)
+				--
+				([xshift=-\RightMargin]current page.south east);
+				
+				% top
+				\draw
+				([yshift=-1cm]current page.north west)
+				--
+				([yshift=-1cm]current page.north east);
+				
+				% botton
+				\draw
+				([yshift=1cm]current page.south west)
+				--
+				([yshift=1cm]current page.south east);
+				
+			\end{scope}
+			
+			%%%%%% STAVE %%%%%%
+			\begin{scope}[black,line width=0.35pt]
+				
+				% 16 STAVES FILLING THE PAGE
+				\foreach \staff in {0,...,15} {
+					
+					% 5 LINES
+					\foreach \line in {0,...,4} {
+						
+						\pgfmathsetlengthmacro{\Y}{
+							-12mm
+							-\staff*16.5mm
+							-\line*2mm
+						}
+						
+						\draw
+						([xshift=\LeftMargin,yshift=\Y]current page.north west)
+						--
+						([xshift=-\RightMargin,yshift=\Y]current page.north east);
+						
+					}
+				}
+				
+			\end{scope}
+			
+		\end{tikzpicture}
+		
+	}
+}
+
+%%%%%% DOCUMENT %%%%%%
+\begin{document}
+	
+	\mbox{}
+	
+	\newpage
+	
+	\mbox{}
+	
+\end{document}
