@@ -1,0 +1,210 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{caption}
+
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+	
+	\begin{figure}[htbp]
+		\caption{Comparative Scatter Plot - Title Here}
+		\vspace{3mm}
+		\centering
+		\begin{tikzpicture}
+			\begin{axis} [
+				width=12.1cm, height=5.5cm,
+				title style={font=\rmfamily\bfseries\fontsize{10}{12}},
+				xlabel style={font=\rmfamily\bfseries\fontsize{10}{12}, label shift=-2pt},
+				ylabel style={font=\rmfamily\bfseries\fontsize{10}{12}, label shift=-2pt},
+				xticklabel style={rotate=23, anchor=east, font=\rmfamily\fontsize{8}{10}},
+				yticklabel style={font=\rmfamily\fontsize{8}{10}},
+				xlabel={Variable},
+				ylabel={Degrees ($^\circ$)},
+				xmin=0.4, xmax=6.6,
+				ymin=-120, ymax=220,
+				xtick={1,2,3,4,5,6},
+				xticklabels={
+					{VAR 1}, 
+					{VAR 2}, 
+					{VAR 3}, 
+					{VAR 4}, 
+					{VAR 5}, 
+					{VAR 6}
+				},
+				axis lines=box,
+				grid=none,
+				axis line style={black, thick},
+				tick style={black, thick},
+				legend style={
+					at={(1.05,0.5)},
+					anchor=west,
+					legend columns=1,
+					draw=black, 
+					fill=white, 
+					font=\rmfamily\fontsize{8}{10},
+					inner sep=3pt,
+					/tikz/every even column/.append style={column sep=3mm}
+				},
+				scatter/classes={
+					lit1={mark=square, draw=black, fill=white, mark size=2.8pt, thick},
+					lit2={mark=triangle, draw=black, fill=white, mark size=3.2pt, thick},
+					lit3={mark=diamond, draw=black, fill=white, mark size=3.5pt, thick},
+					persona1={mark=*, draw=black, fill=black, mark size=2.2pt},
+					persona2={mark=square*, draw=black, fill=black, mark size=2.2pt},
+					persona3={mark=triangle*, draw=black, fill=black, mark size=2.4pt},
+					persona4={mark=diamond*, draw=black, fill=black, mark size=2.6pt}
+				}
+				]
+				
+				% --- LIT 1 ---
+				\addplot[scatter, only marks, scatter src=explicit symbolic] table[meta=label] {
+					x y label
+					0.7 145 lit1
+					0.7 -60 lit1
+					1.7 165 lit1
+					1.7 0 lit1
+					2.7 90 lit1
+					2.7 -70 lit1
+					3.7 145 lit1
+					3.7 -60 lit1
+					4.7 165 lit1
+					4.7 0 lit1
+					5.7 90 lit1
+					5.7 -70 lit1
+				};
+				
+				% --- LIT 2 ---
+				\addplot[scatter, only marks, scatter src=explicit symbolic] table[meta=label] {
+					x y label
+					0.8 150 lit2
+					0.8 180 lit2
+					0.8 -40 lit2
+					0.8 -60 lit2
+					1.8 150 lit2
+					1.8 180 lit2
+					1.8 0 lit2
+					2.8 80 lit2
+					2.8 90 lit2
+					2.8 -70 lit2
+					2.8 -90 lit2
+					3.8 150 lit2
+					3.8 180 lit2
+					3.8 -40 lit2
+					3.8 -60 lit2
+					4.8 150 lit2
+					4.8 180 lit2
+					4.8 0 lit2
+					5.8 80 lit2
+					5.8 90 lit2
+					5.8 -70 lit2
+					5.8 -90 lit2
+				};
+				
+				% --- LIT 3 ---
+				\addplot[scatter, only marks, scatter src=explicit symbolic] table[meta=label] {
+					x y label
+					0.9 180 lit3
+					0.9 -45 lit3
+					1.9 180 lit3
+					1.9 0 lit3
+					2.9 90 lit3
+					2.9 -90 lit3
+					3.9 180 lit3
+					3.9 -45 lit3
+					4.9 180 lit3
+					4.9 0 lit3
+					5.9 90 lit3
+					5.9 -90 lit3
+				};
+				
+				% --- PERSONA 1 ---
+				\addplot[scatter, only marks, scatter src=explicit symbolic] table[meta=label] {
+					x y label
+					1.0 112.3 persona1
+					1.0 -52.8 persona1
+					2.0 128.5 persona1
+					2.0 -12.4 persona1
+					3.0 78.2 persona1
+					3.0 -58.9 persona1
+					4.0 158.7 persona1
+					4.0 -50.3 persona1
+					5.0 108.4 persona1
+					5.0 -22.1 persona1
+					6.0 72.6 persona1
+					6.0 -63.5 persona1
+				};
+				
+				% --- PERSONA 2 ---
+				\addplot[scatter, only marks, scatter src=explicit symbolic] table[meta=label] {
+					x y label
+					1.1 82.5 persona2
+					1.1 -42.3 persona2
+					2.1 92.8 persona2
+					2.1 -6.2 persona2
+					3.1 52.4 persona2
+					3.1 -40.8 persona2
+					4.1 118.9 persona2
+					4.1 -36.5 persona2
+					5.1 76.2 persona2
+					5.1 -14.8 persona2
+					6.1 45.9 persona2
+					6.1 -46.7 persona2
+				};
+				
+				% --- PERSONA 3 ---
+				\addplot[scatter, only marks, scatter src=explicit symbolic] table[meta=label] {
+					x y label
+					1.2 93.6 persona3
+					1.2 -46.7 persona3
+					2.2 106.2 persona3
+					2.2 -7.9 persona3
+					3.2 60.5 persona3
+					3.2 -44.2 persona3
+					4.2 133.8 persona3
+					4.2 -40.5 persona3
+					5.2 86.9 persona3
+					5.2 -15.3 persona3
+					6.2 53.8 persona3
+					6.2 -50.9 persona3
+				};
+				
+				% --- PERSONA 4 ---
+				\addplot[scatter, only marks, scatter src=explicit symbolic] table[meta=label] {
+					x y label
+					1.3 138.9 persona4
+					1.3 -70.8 persona4
+					2.3 148.7 persona4
+					2.3 -14.2 persona4
+					3.3 88.4 persona4
+					3.3 -74.2 persona4
+					4.3 178.6 persona4
+					4.3 -58.9 persona4
+					5.3 128.3 persona4
+					5.3 -33.7 persona4
+					6.3 85.1 persona4
+					6.3 -76.9 persona4
+				};
+				
+				\legend{\shortstack{Lit 1},
+					\shortstack{Lit 2},
+					\shortstack{Lit 3},
+					Persona 1,
+					Persona 2,
+					Persona 3,
+					Persona 4
+				}
+			\end{axis}
+		\end{tikzpicture}
+		\label{fig:rom}
+		\begin{flushleft}
+			\small
+			\textit{\textbf{Note:}} Illustrative data. Variables 1-6 represent different movement conditions. Lit 1-3 are literature references. Personas 1-4 are fictional.
+		\end{flushleft}
+	\end{figure}
+	
+\end{document}
