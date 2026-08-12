@@ -60,7 +60,7 @@ For Portuguese-speaking users, additional related educational materials are avai
 
 The materials can be accessed through the institutional UDESC YouTube channel:
 
-INEC/UDESC — Institutional YouTube Channel
+INECO/UDESC — Institutional YouTube Channel
 https://www.youtube.com/@inecoudesc8132
 
 This resource is provided as a complementary source of Portuguese-language educational content related to LaTeX, VR, engineering, and academic and technical subjects.
