@@ -54,6 +54,17 @@ https://www.udesc.br/arquivos/udesc/id_cpmenu/12501/PacotesBasicos_1727804130086
 
 These resources are provided by UDESC and are referenced here as an additional institutional resource for users working with LaTeX in academic contexts.
 
+***Portuguese-Language Academic Resources
+
+For Portuguese-speaking users, additional related educational materials are available through the institutional YouTube channel of UDESC's Instituto de Engenharia e Ciência da Computação (INEC/UDESC). The channel provides access to educational and academic content related to LaTeX, virtual reality (VR), engineering, computing, and other topics relevant to scientific and technical education.
+
+The materials can be accessed through the institutional UDESC YouTube channel:
+
+INEC/UDESC — Institutional YouTube Channel
+https://www.youtube.com/@inecoudesc8132
+
+This resource is provided as a complementary source of Portuguese-language educational content related to LaTeX, VR, engineering, and academic and technical subjects.
+
 ## Repository Structure
 
 The repository contains LaTeX source files (`.tex`) and supporting educational materials, including an introductory guide to TeXstudio.
