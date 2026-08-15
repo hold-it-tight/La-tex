@@ -1,69 +1,35 @@
-# LaTeX Educational Resources
+LaTeX Educational Resources
 
-This repository provides educational materials, examples, and practical resources for learning and using LaTeX and TeXstudio. The materials are intended to support students, researchers, educators, and other users interested in preparing scientific, technical, and academic documents using LaTeX.
+This repository provides materials, templates, and practical examples for learning and using LaTeX and TeXstudio. It supports students, researchers, and educators in preparing academic, scientific, and technical documents.
 
-## Contents
+Contents
 
-The repository includes:
+.tex source files: Examples demonstrating basic LaTeX document structures and configurations.
 
-* `.tex` source files demonstrating basic LaTeX document structures and configurations;
-* document templates and practical examples;
-* examples for creating graph paper and musical staff sheets using LaTeX and TikZ;
-* a basic LaTeX setup for A4 documents;
-* an introductory guide to using TeXstudio, authored by the repository maintainer and made publicly available as an educational support resource.
+Document templates: Ready-to-use structures, including configurations for A4 documents, graph paper, and musical staff sheets using TikZ.
 
-## Technologies and Packages
+TeXstudio Guide: An introductory guide authored by the repository maintainer to assist users setting up and working with TeXstudio.
 
-The repository includes examples and resources related to the following technologies and packages within the TeX/LaTeX ecosystem:
+Technologies and Packages
 
-* **TeX and LaTeX** => document preparation and typesetting systems;
-* **TikZ** => a LaTeX-based system for creating programmatic vector graphics, diagrams, and technical illustrations;
-* **PGFPlots** => a LaTeX package for creating scientific and technical plots and data visualizations, built upon the PGF/TikZ framework;
-* **Beamer** => a LaTeX document class for creating presentation slides, particularly for academic and scientific purposes.
+TeX & LaTeX: Document preparation and typesetting systems.
 
-These resources support the practical use of LaTeX for the preparation of scientific, technical, and academic documents, graphics, plots, and presentations.
+TikZ: Programmatic vector graphics, diagrams, and technical illustrations.
 
-## Educational Purpose
+PGFPlots: Scientific data visualization and plotting built upon TikZ.
 
-The materials are designed to facilitate the learning and practical use of LaTeX and TeXstudio. The examples provide reusable source files that can be examined, modified, and adapted to different document preparation needs.
+Beamer: Document class for creating academic and scientific presentations.
 
-The repository emphasizes practical learning through examples and source files, allowing users to develop familiarity with LaTeX document structures, document configuration, page layout, graphical elements, data visualization, and presentation development.
+LaTeX in Scientific Communication
 
-## Authored Educational Material
+LaTeX is widely used across academia to handle structured documents, complex mathematics, bibliographies, graphics, and slide decks. The examples in this repository allow users to examine, modify, and adapt source files to build familiarity with LaTeX workflows.
 
-The repository includes an introductory guide to TeXstudio authored by the repository maintainer. The guide is provided as an educational support resource for users who are learning to work with TeXstudio and LaTeX.
+Related Academic Resources
 
-The guide is made publicly available through this repository to facilitate access to introductory information and practical guidance on the use of TeXstudio for LaTeX document preparation.
+UDESC Templates: For undergraduate theses, dissertations, and doctoral work, Santa Catarina State University (UDESC) offers official packages and templates: Download UDESC Package.
 
+Portuguese Video Resources: Portuguese-speaking users can access video tutorials on LaTeX, engineering, computing, and virtual reality via the INECO/UDESC YouTube Channel.
 
-## LaTeX in Scientific and Technical Communication
+Usage & License
 
-LaTeX is a document preparation system widely used in scientific, technical, and academic contexts. It provides tools for producing structured documents, mathematical content, bibliographic references, technical illustrations, scientific plots, and presentations.
-
-This repository provides introductory and practical resources to help users develop familiarity with LaTeX workflows and apply these tools to scientific, technical, and academic communication.
-
-## Related Academic Resources
-
-For users preparing undergraduate theses, master's dissertations, or doctoral theses, Santa Catarina State University (UDESC) provides LaTeX packages and templates for academic document preparation.
-
-The UDESC resources are available at:
-https://www.udesc.br/arquivos/udesc/id_cpmenu/12501/PacotesBasicos_17278041300861_12501.zip
-
-These resources are provided by UDESC and are referenced here as an additional institutional resource for users working with LaTeX in academic contexts.
-
-=>> PORTUGUESE Language Academic Resources
-
-For Portuguese-speaking users, additional related educational materials are available through the institutional YouTube channel of UDESC's Instrumentation and Control Laboratory (INECO/UDESC). The channel provides access to educational and academic content related to engineering, computing, LaTeX, virtual reality (VR) and other topics relevant to scientific and technical education.
-
-The materials can be accessed through the institutional UDESC YouTube channel:
-https://www.youtube.com/@inecoudesc8132
-
-## Repository Structure
-
-The repository contains LaTeX source files (`.tex`) and supporting educational materials, including an introductory guide to TeXstudio.
-
-## Intended Use
-
-The materials are provided for educational and practical purposes. Users may consult the examples as references, examine and modify the source files, and adapt them to their own learning activities and document preparation projects.
-
-The materials are intended to facilitate access to practical examples and introductory guidance for users developing skills in LaTeX and related tools.
+All materials are provided for educational purposes. Feel free to consult, modify, and adapt these source files for your own projects and learning activities.
