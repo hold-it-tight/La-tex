@@ -27,6 +27,8 @@ LaTeX is widely used across academia to handle structured documents, complex mat
 ## Related Academic Resources
 
 UDESC Templates: For undergraduate theses, dissertations, and doctoral work, Santa Catarina State University (UDESC) offers official packages and templates: Download UDESC Package.
+https://www.udesc.br/arquivos/udesc/id_cpmenu/12501/PacotesBasicos_17278041300861_12501.zip
+
 
 Portuguese Video Resources: Portuguese-speaking users can access video tutorials on LaTeX, engineering, computing, and virtual reality via the INECO/UDESC YouTube Channel.
 
